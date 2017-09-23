@@ -10,8 +10,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-  if (message.content === 'hello time-bot' || message.content === 'hello time bot') {
+  if (message.content.includes('hello time-bot') || message.content.includes('hello time bot')) {
     message.channel.send(`Hello, ${message.author.username}!`);
+  }
+
+  if (message.content.split(" ")[0] === 'propose') {
+    const splitMessageArray = message.content.split(" ");
+    message.channel.send(`${message.author.username} would like to propose that we play ${splitMessageArray[1]} from ${splitMessageArray[2]}`)
   }
 });
 

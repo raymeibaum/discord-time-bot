@@ -18,10 +18,8 @@
     "url": "https://github.com/raymeibaum/discord-time-bot/issues"
   },
   "homepage": "https://github.com/raymeibaum/discord-time-bot#readme",
-  "devDependencies": {
-    "dotenv": "^4.0.0"
-  },
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.2.1",
+    "dotenv": "^4.0.0"
   }
 }
